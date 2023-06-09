@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main .contenedor{   
+    /*width:756.5px;*/
+    width: 100%;
+   
+    height:calc(120vh - 153px);
+    
+    
+    display: grid;
+    grid-template-rows: 70% 30%;
+    
+    
+}
+
+main .superior{
+    
+    background-color: rgba(253, 251, 251, 0.4);
+    
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-color: #000;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px ;
+    border-bottom-width: 0px ;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    
+}
+
+main .superior .habilidad{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 10px;
+    
+}
+
+main .superior .habilidad .icono{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+    
+}
+
+main .superior .habilidad .icono i{
+    color: #000;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px white;
+}
+
+main .superior .habilidad .barra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+main .superior .barra p{
+    color: #000;
+    text-shadow: 3px 3px 3px white;
+}
+
+:root{
+    --bar-color: #5a86e4;
+    --fill-size-1: -15%;
+    --fill-size-2: -25%;
+    --fill-size-3: -35%;
+    --fill-size-4: -20%;
+    --fill-size-5: -10%
+}
+
+main .superior .habilidad .barra .carga{
+    position: relative;
+    margin-top: 15px;
+    width: 340px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+main .superior .habilidad .barra .uno::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 100%;
+    
+    border-radius: 5px;
+    background-color: var(--bar-color);
+    transform: translate(-100%);
+    animation: fill-bar1 2s 0.1s ease-in-out forwards;
+   
+}
+
+@keyframes fill-bar1 {
+    to {
+        transform: translateX(var(--fill-size-1));
+    }
+}
+
+main .superior .habilidad .barra .dos::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 100%;
+    
+    border-radius: 5px;
+    background-color: var(--bar-color);
+    transform: translate(-100%);
+    animation: fill-bar2 2s 0.1s ease-in-out forwards;
+   
+}
+
+@keyframes fill-bar2 {
+    to {
+        transform: translateX(var(--fill-size-2));
+    }
+}
+
+main .superior .habilidad .barra .tres::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 100%;
+    
+    border-radius: 5px;
+    background-color: var(--bar-color);
+    transform: translate(-100%);
+    animation: fill-bar3 2s 0.1s ease-in-out forwards;
+   
+}
+
+@keyframes fill-bar3 {
+    to {
+        transform: translateX(var(--fill-size-3));
+    }
+}
+
+main .superior .habilidad .barra .cuatro::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 100%;
+    
+    border-radius: 5px;
+    background-color: var(--bar-color);
+    transform: translate(-100%);
+    animation: fill-bar4 2s 0.1s ease-in-out forwards;
+   
+}
+
+@keyframes fill-bar4 {
+    to {
+        transform: translateX(var(--fill-size-4));
+    }
+}
+
+main .superior .habilidad .barra .cinco::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 100%;
+    
+    border-radius: 5px;
+    background-color: var(--bar-color);
+    transform: translate(-100%);
+    animation: fill-bar5 2s 0.1s ease-in-out forwards;
+   
+}
+
+@keyframes fill-bar5 {
+    to {
+        transform: translateX(var(--fill-size-5));
+    }
+}
+
+main .inferior{
+    
+    background-color:rgba(90, 134, 228,0.8);
+    color: #000;
+    border-radius:0 0 20px 20px;
+    border-style: solid;
+    border-color: #000;
+    border-top-width: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px ;
+    border-bottom-width: 1px ;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    
+}
+
+main .inferior .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .inferior .idiomas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main .inferior .idiomas .esp, main .inferior .idiomas .ingles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.titulo h2, .idiomas h4 {
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+
+.idiomas h4 {
+   font-size: 19px;
+}
+
+.idiomas p{
+    font-size: 18px;
+    margin-top: 25px;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+

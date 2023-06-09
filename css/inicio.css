@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main .contenedor{   
+    /*width:756.5px;*/
+    width: 100%;
+   
+    height:calc(120vh - 153px);
+    
+    
+    display: grid;
+    grid-template-rows: 52% 17% 31%;
+    
+    
+}
+
+main .superior{
+    
+    background-color: rgba(253, 251, 251, 0.4);
+    
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-color: #000;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px ;
+    border-bottom-width: 0px ;
+    
+    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+}
+
+main .superior .izq, main .superior .der{
+    width:calc(100% - 15px);
+    
+    height: calc(100% - 20px);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 7.5px;
+}
+
+main .superior .izq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .superior .izq img{
+    display: flex;
+    margin-left: 55px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1.5px;
+    box-shadow: 0 8px 15px #000;
+}
+main .superior .der{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+main .superior .der h1{
+    display: flex;
+    margin-left: 40px;
+    color: #5a86e4;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px white;
+}
+
+main .superior .der h3{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 40px;
+    color: #000;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px white;
+}
+
+main .superior .der h4{
+    display: flex;
+    margin-top: -2px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: #5a86e4;
+    font-size: 20px;
+}
+
+main .superior .der strong{
+   
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5a86e4;
+    font-size: 16px;
+    
+}
+
+main .superior .der p{
+    
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #000;
+    font-size: 16px;
+    text-shadow: 2px 2px 2px white;
+}
+
+
+
+
+main .medio{
+    
+    background-color:rgba(252, 251, 251, 1);
+   
+    border-style: solid;
+    border-color: #000;
+    border-top-width: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px ;
+    border-bottom-width: 0px ;
+   
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5a86e4;
+}
+
+main .medio p{
+    margin: 50px;
+}
+
+main .inferior{
+    
+    background-color:rgba(90, 134, 228,0.8);
+    color: #000;
+    border-radius:0 0 20px 20px;
+    border-style: solid;
+    border-color: #000;
+    border-top-width: 0px;
+    border-left-width: 1px;
+    border-right-width: 1px ;
+    border-bottom-width: 1px ;
+    
+    
+}
+
+ .inferior form{
+    display: grid;
+    grid-template-rows: 85% 15%;
+    width:calc(100% - 15px);
+    height: calc(100% - 10px);
+    border-radius: 10px;
+   
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 7.5px;
+}
+
+.inferior form .formsuperior{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:calc(100% - 15px);
+    
+    margin-left: 7.5px;
+    
+}
+
+form .formsuperior .paso1{
+
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    margin: 7.5px 7.5px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+form .formsuperior .paso2{
+
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+   
+    margin: 7.5px 7.5px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+.paso1 .campos{
+    background-color: rgba(252, 251, 251, 0.4);
+    width: calc(100% - 15px);
+    margin: 1.5px 7.5px;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: rgb(13, 13, 12);
+}
+
+.paso2 .campos{
+    background-color: rgba(252, 251, 251, 0.4);
+    width: calc(100% - 15px);
+    margin: 1.5px 7.5px;
+    border-radius: 5px;
+    height: 70px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: rgb(13, 13, 12);
+}
+.campos label{
+    margin-left: 10px;
+}
+
+.campos input{
+    margin-right: 20px;
+    height: 25px;
+    width: 200px;
+}
+.campos input:focus, .campos textarea:focus{
+    outline: 0;
+    border: 1px solid #5a86e4;
+    box-shadow: 0 1px 8px #13398b;
+}
+form h4{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+form h4{
+    color: #fff;
+    text-shadow: 20px 20px 20px black;
+}
+.campos textarea{
+    margin-top: 2px;
+    margin-right: 10px;
+    border-radius: 2px;
+    border-width: 0;
+    border-color: #fff;
+}
+
+form .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button{
+    background-color: #5a86e4;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 12px;
+    border-style: solid;
+    border-color: #fff ;
+    transition: 0.5s;
+}
+
+form button:hover{
+
+    background-color: #477ae7;
+    width: 110px;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    border-style: none;
+    transition: 0.5s;
+}

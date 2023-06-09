@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <title>Inicio</title>
+</head>
+<body>
+
+    
+    <main>
+        <div class="contenedor">
+            
+            <section class="superior">
+                <div class="izq">
+                    <img src="../img/foto.jpg" width="200px">
+                </div>
+                <div class="der">
+                    <h1>Jordan Israel Sanchez Velarde</h1>
+                    <h3>Estudiante</h3>
+                    <h4>____________________________________</h4>
+                    <p> <strong>Edad:</strong>  26 años</p>
+                    <p> <strong>Direccion:</strong>  Ciudadela del Ejercito</p>
+                    <p> <strong>Email:</strong> jordanjicp14@gmail.com</p>
+                    <p> <strong>Telefono:</strong> 0980407759</p>
+                </div>
+            </section>
+            <section class="medio">
+                <p>Actualmente soy estudiante de la carrera de Tecnologias de la informacion
+                    en la Universidad de las Fuerzas Armadas ESPE, decidi escoger esta carrera
+                    ya que me atrae todo lo relacionado con la Tecnologia e Informacion, ademas de 
+                    que es una carrera que cada vez demanda mas profesionales debido a la digitalizacion 
+                    mundial en la que nos encontramos.
+                </p>
+    
+            </section>
+            <section class="inferior">
+                <form action="php/recibe.php" method="post">
+                    <div class="formsuperior">
+                        <div class="paso1">
+                            <h4>Contactanos</h4>
+                            <div class="campos">                    
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="  Nombre y apellido" required>
+                            </div>
+                            <div class="campos">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="  ejemplo@avianca.com" required>
+                            </div>
+                            <div class="campos">
+                                <label for="telefono">Telefono</label>
+                                <input type="number" name="telefono" id="telefono" placeholder="  +59323029300000" required>
+                            </div>
+                        </div>
+                        <div class="paso2">
+                            <h4>Dudas o consultas</h4>
+                            <div class="campos">                    
+                                <label for="inquietudes">Que deseas saber</label>
+                                <textarea name="inquietudes" id="inquietudes" cols="25" rows="4" required></textarea>
+                            </div>
+                            <div class="campos">                    
+                                <label for="sugerencias">Sugerencias</label>
+                                <textarea name="sugerencias" id="sugerencias" cols="24" rows="4" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="boton">
+                            <button type="submit">ENVIAR</button>
+                        </div>
+                    
+                    
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
